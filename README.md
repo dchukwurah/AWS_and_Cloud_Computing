@@ -18,9 +18,9 @@ Cloud computing is **the delivery of computing services over the Internet ("the 
 2. **1970s**: The concept of virtual machines (VMs) was developed, allowing multiple operating systems to run on a single physical system.
 3. **1990s**: Telecommunications companies started offering virtualized private network connections.
 4. **2002**: Amazon launched Amazon Web Services (AWS), providing a suite of cloud-based services.
-5. **2006**: Amazon introduced the Elastic Compute Cloud (EC2).
+5. **2006**: Amazon introduced the Elastic Compute Cloud (EC2). Storing things virtually in an amazon owned datacentre
 6. **2008**: Google launched the Google App Engine, and Microsoft launched Azure.
-7. **2010s**: The rise of big data analytics and the Internet of Things (IoT) further boosted the adoption of cloud computing.
+7. **2010s**: The rise of big data analytics and the Internet of Things (IoT) further boosted the adoption of cloud computing. Servers were used in AWS extensively
 
 ### What Can You Do with Cloud Computing?
 
@@ -30,7 +30,8 @@ Cloud computing is **the delivery of computing services over the Internet ("the 
 4. **Software on Demand**: Use software without installation (SaaS).
 5. **Data Analysis**: Analyze data for patterns and insights.
 6. **Machine Learning and AI**: Train AI models.
-7. **Virtual Desktops**: Access your desktop anywhere.
+7. **Virtual Desktops**: Access your desktop anywhere. Having a computer within a computer. 
+8. **Containerisation**:
 
 ### What is “On-Prem”?
 
@@ -41,11 +42,12 @@ Cloud computing is **the delivery of computing services over the Internet ("the 
 1. **Public Cloud**: Owned and operated by third-party cloud service providers, and the resources are shared among multiple users.
 2. **Private Cloud**: Used exclusively by a single organization. It can be hosted on-premises or by a third-party provider.
 3. **Hybrid Cloud**: Combines public and private clouds, allowing data and applications to be shared between them.
-4. **Community Cloud**: Shared by several organizations with common concerns.
+4. **Community/Multi Cloud**: Increasingly popular - shared by several organizations with common concerns.
 
 ### What are the Different Types of Cloud SERVICE?
-
+![Screenshot 2023-09-26 at 12.03.00.png](Screenshot%202023-09-26%20at%2012.03.00.png)
 1. **IaaS (Infrastructure as a Service)**: Provides virtualized computing resources over the internet.
+![Screenshot 2023-09-26 at 12.02.11.png](Screenshot%202023-09-26%20at%2012.02.11.png)
 2. **PaaS (Platform as a Service)**: Provides a platform allowing customers to develop, run, and manage applications.
 3. **SaaS (Software as a Service)**: Delivers software applications over the internet on a subscription basis.
 
@@ -88,5 +90,9 @@ The four pillars of DevOps are:
 2. **Automation**: Automating manual processes.
 3. **Measurement**: Using metrics and feedback to improve processes.
 4. **Sharing**: Sharing feedback and best practices.
+5. EASY TO USE 
+6. FLEXIBILITY - industry changes fast so do not create dependent systems 
+7. Robustness - 
+8. Cost - 
 
 The cloud complements DevOps by providing on-demand resources, automation tools, and scalability, making it easier to implement DevOps practices.
