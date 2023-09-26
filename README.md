@@ -10,8 +10,8 @@ Cloud computing is **the delivery of computing services over the Internet ("the 
 - Analytics
 - Intelligence
 
-![](/Users/doz/Documents/cloud-computing-architecture-diagram.webp)
 
+![Screenshot 2023-09-26 at 11.52.44.png](..%2F..%2FDesktop%2FScreenshot%202023-09-26%20at%2011.52.44.png)
 ### Quick History/Timeline of Cloud Computing:
 
 1. **1960s**: The idea of an "intergalactic computer network" was introduced by J.C.R. Licklider, leading to the development of ARPANET (Advanced Research Projects Agency Network).
