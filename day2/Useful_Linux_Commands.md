@@ -1,10 +1,9 @@
 # Useful Linux Commands
-- ```uname```
-- flags:
-- `-a` : more info
-- `-p` : type of processor
+
+#### Shell is an interface that lets you run things e.g. powershell, bash(born again shell)
+- ```uname```flags: `-a` : more info`-p` : type of processor
 - `whoami` tells you who you are
-- Shell is an interface that lets you run things e.g. powershell, bash(born again shell),
+
 - ```cat /etc/shells``` cat prints the contents of the file
 - ```history``` - will give your past 500 commands in the shell 
 - ```history -c``` will reset your history typically used for data protection e.g. passwords
@@ -21,7 +20,7 @@
 - ```rm -r``` r stands for recursive 
 - ``` touch ``` touches a file, can be used to make a new blank file
 - ```nano ``` makes a file and opens up a text editor for you to edit the file
-- in nano, ^ means ctrl
+- in nano, `^` means ctrl
 - ```head -2 chicken-joke.txt``` will bring back the top -number of lines back
 - ``` tail works in the same way```
 - ```nl ``` counts the lines in a text file (numbered lines)
@@ -31,5 +30,4 @@
 - ``` sudo ``` (super user do)gives super user permissions for a particular command
 - root is the absolute root of the system, i.e. C://
 - Different to root user which you can change to using `sudo su`
-- You can use exit to exit from root user
-- 
+- You can use `exit` to exit from root user
