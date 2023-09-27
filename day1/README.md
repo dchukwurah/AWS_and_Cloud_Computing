@@ -10,7 +10,7 @@ Cloud computing is **the delivery of computing services over the Internet ("the 
 - Analytics
 - Intelligence
 
-![Screenshot 2023-09-26 at 11.52.44.png](Screenshot%202023-09-26%20at%2011.52.44.png)
+![Screenshot 2023-09-26 at 11.52.44.png](Screenshot 2023-09-26 at 11.52.44.png)
 
 ### Quick History/Timeline of Cloud Computing:
 
@@ -45,9 +45,9 @@ Cloud computing is **the delivery of computing services over the Internet ("the 
 4. **Community/Multi Cloud**: Increasingly popular - shared by several organizations with common concerns.
 
 ### What are the Different Types of Cloud SERVICE?
-![Screenshot 2023-09-26 at 12.03.00.png](Screenshot%202023-09-26%20at%2012.03.00.png)
+![Screenshot 2023-09-26 at 12.03.00.png](Screenshot 2023-09-26 at 12.03.00.png)
 1. **IaaS (Infrastructure as a Service)**: Provides virtualized computing resources over the internet.
-![Screenshot 2023-09-26 at 12.02.11.png](Screenshot%202023-09-26%20at%2012.02.11.png)
+![Screenshot 2023-09-26 at 12.02.11.png](Screenshot 2023-09-26 at 12.02.11.png)
 2. **PaaS (Platform as a Service)**: Provides a platform allowing customers to develop, run, and manage applications.
 3. **SaaS (Software as a Service)**: Delivers software applications over the internet on a subscription basis.
 
