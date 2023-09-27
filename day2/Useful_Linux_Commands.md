@@ -26,7 +26,7 @@
 - ```nl ``` counts the lines in a text file (numbered lines)
 - ``` grep ``` print out any lines that contain some characters
 - ```|``` chains certain commands together
-- ``` apt ``` used to install similar to piptrue
+- ``` apt ``` used to install similar to pip
 - ``` sudo ``` (super user do)gives super user permissions for a particular command
 - root is the absolute root of the system, i.e. C://
 - Different to root user which you can change to using `sudo su`
