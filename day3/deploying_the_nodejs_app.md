@@ -1,20 +1,24 @@
 # Deploying the node JS app
 
 
-## Setting up EC2
+## Setting up EC2 and adding the App to the Machine
 
 Follow the steps in **ec2_setup_ngix_deploy.md** in day2 folder to set up your EC2 machine.
 This time, **add port 3000 via a custom protoco**l (TCP) to allow for running a node js app
+
 
 Use the provided command to connect to your ubuntu user profile on the EC2.
 e.g. `ssh -i "tech254.pem" ubuntu@ec2-54-155-164-225.eu-west-1.compute.amazonaws.com`
 `-i` means identity, `tech254.pem` is the identity.
 
+
 Using the copied HTTPS url, use the git clone command to clone the repo with the app in it.
 e.g. `git clone git clone https://github.com/LSF970/sparta_test_app.git`
+
+
 Use `ls` to check the app is there.
 
-## Setting up NodeJs app
+## Setting up and Running the NodeJs app
 
 First:
 - `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
