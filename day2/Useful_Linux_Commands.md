@@ -5,6 +5,7 @@
 - `whoami` tells you who you are
 
 - ```cat /etc/shells``` cat prints the contents of the file
+- .sh is the shell extension
 - ```history``` - will give your past 500 commands in the shell 
 - ```history -c``` will reset your history typically used for data protection e.g. passwords
 - ```ls``` or ```ls -a```
