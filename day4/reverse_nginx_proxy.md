@@ -25,12 +25,14 @@
 
 ### 3. Diagram for Reverse Proxy vs. Proxy:
 
-[Creating a diagram to illustrate the difference between a reverse proxy and a proxy.]
+![proxyVreverse.png](proxyVreverse.png)
+
 
 ### Nginx's default configuration:
 
 - Nginx's default configuration is typically found in the `/etc/nginx/sites-available/` directory on most Linux distributions.
 - The default configuration file is usually named `default`. This file defines how to respond to requests, directing them to the appropriate locations so that the content can be served.
+- These configuration files can be enabled by creating symbolic links to them in the `/etc/nginx/sites-enabled` directory.
 
 ### How do you set up an Nginx reverse proxy?
 
