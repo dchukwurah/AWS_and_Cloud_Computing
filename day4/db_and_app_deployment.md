@@ -1,20 +1,15 @@
-# AMi amazon machine image
-# same concept as disk images 
-# go to actions in instance and create an image - DO NOT CREATE a Template
-# Instance volume means it will store it in a valume 
-# default stroage types are EBS IBS etc can change the size here for our puropses no size change
-
-# AMIs and scripts together for better esion control and auto scaling 
-# EC2 instance running a db EC2 running application
-# on one ec2 nginx is runnning on port3000
+# App and DB deployment using EC2 and MongoDB
+# EC2 instance running a mongodb on port 27017 and an EC2 running application (nginx, nodejs) on port 3000
 # extend the functionality with /posts page i.e. 3000/posts
-# dummy data page supplied by a database which means its dynamic
-#create a db vm
-# install mongodb
-# configure mongodb to allow a 
-# log into app and db instance
-# different mongo versions have different pgp/gpg key pairs
-# using the key to get the key pair and use mongo
+# There is a dummy data page on our app supplied by a database which means its dynamic
+# First create a db vm
+# Then install mongodb
+# After this configure mongodb to allow a 
+# Once this is done log into app and db instance
+# **Remember** different mongo versions have different pgp/gpg key pairs
+
+
+## using the key to get the key pair and use mongo
 # **getting the key**: `wget -qO - https://www.mongodb.org/static/pgp/server-3.2.asc | sudo apt-key add -`
 # **verifying the key and location**: `echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list`
 # `sudo apt update` will now download mongo 
@@ -23,11 +18,14 @@
 # sudo systemctl start mongod
 # sudo systemctl enable mongod
 # sudo systemctl status mongod - confirm its running
-# in app ec2 instance add mongo env variable using IPsystem add 
 
 
-
+## Connect the App EC2 to MongoDB instance by adding an environment variable.
+## In the App use 
 # created an environment variable in order for it to be dropped into the code at any type i.e. DB_HOST
-# export DB_HOST=mongodb://54.171.49.231:27017/posts
+# `export DB_HOST=mongodb://54.171.49.231:27017/posts`
 
-then npm installcd .
+# then npm install - this will set up the app and the connection to db where you should see a message of db cleared and db seeded
+
+# then node app.js to start the app 
+# access the app itself by using the link with the necessary port and /location e.g. http://52.31.236.70:3000/posts
