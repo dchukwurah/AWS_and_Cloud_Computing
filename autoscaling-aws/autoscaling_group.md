@@ -5,6 +5,8 @@
 •	From the AWS services list, select 'EC2'.
 #### Go to Auto Scaling Groups:
 •	In the EC2 dashboard, on the left navigation pane, under 'AUTO SCALING', click on 'Auto Scaling Groups'.
+![createasg.png](createasg.png)
+
 #### Initiate Auto Scaling Group Creation:
 •	Click the 'Create Auto Scaling group' button.
 •	If prompted, create a launch configuration. This defines the EC2 instance settings.
