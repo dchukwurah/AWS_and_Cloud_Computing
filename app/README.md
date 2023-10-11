@@ -2,7 +2,7 @@
 
 ## Description
 
-This sparta global app is intended for use with the Sparta Global Devops Stream, Tech254 as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch. 
+This sparta app is intended for use with the Sparta Global Devops Stream, Tech254 as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch. 
 
 To use the repo within your course you should fork it.
 
