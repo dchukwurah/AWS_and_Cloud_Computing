@@ -16,15 +16,15 @@
 
 
 internet gateway will allow for a connection using a public IPVPS notes
-NACL- netwrook adcees cpmtrol linkes
+NACL- network address control links
 
 # 1st create - VPC
 # 2nd create - Create subnets (with IP addresses)
-# 3rd create - create internet gateway
-# 4th create -
-# 5th create - 
-# 6th create -
+# 3rd create - Create internet gateway
+# 4th create - Configure Route Tables
+# 5th create - Security Groups
+# 6th create - 
 
 # security groups are associated to particular vpcs
 # connect the App Virtual Machine to the IP address of the Database Virtual Machine BVM (private IP)
-#
+# VPC structure allows you to mask 
