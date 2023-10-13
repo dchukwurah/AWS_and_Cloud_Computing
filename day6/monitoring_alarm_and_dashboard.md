@@ -1,6 +1,6 @@
+# _Alerts and Monitoring on AWS_
 
-
-# How to create a dashboard
+# Creating a dashboard
 1. Create an instance
 2. Go to Instance summary
 3. Scroll down and click on monitoring in the tabs

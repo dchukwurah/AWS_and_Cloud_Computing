@@ -1,75 +1,3 @@
-#### Sign in to the AWS Management Console: 
-Navigate to the VPC Dashboard.
-
-#### Create a VPC:
-Click on "Your VPCs" and then "Create VPC".
-Provide a name for the VPC.
-Specify a CIDR block for the VPC, e.g., 10.0.0.0/16.
-Click "Create".
-
-
-#### Create Subnets:
-Public Subnet:
-Click on "Subnets" and then "Create subnet".
-Provide a name, e.g., "PublicSubnet".
-Select the VPC you created.
-Specify a CIDR block, e.g., 10.0.2.0/24.
-Choose an Availability Zone.
-Click "Create".
-Private Subnet:
-Repeat the above steps but name it "PrivateSubnet" and use a different CIDR block, e.g., 10.0.3.0/24.
-
-
-#### Create an Internet Gateway:
-Click on "Internet Gateways" and then "Create internet gateway".
-Provide a name and click "Create".
-Attach the created Internet Gateway to your VPC.
-
-
-#### Configure Route Tables:
-Public Route Table:
-Click on "Route Tables" and then "Create route table".
-Provide a name, e.g., "PublicRouteTable".
-Select your VPC and click "Create".
-Select the created route table and go to the "Routes" tab.
-Click "Edit routes" and add a route to allow traffic to the internet: Destination 0.0.0.0/0 and target as the Internet Gateway you created.
-Associate this route table with the "PublicSubnet".
-Private Route Table:
-AWS automatically creates a route table for every VPC. You can use this as your private route table.
-Associate this route table with the "PrivateSubnet".
-
-
-#### Launch VMs (EC2 Instances):
-Public VM:
-Go to the EC2 Dashboard and click "Launch Instance".
-Choose an AMI (Amazon Machine Image).
-Select an instance type.
-In the "Configure Instance" step, select your VPC and "PublicSubnet".
-Ensure "Auto-assign Public IP" is set to "Enable".
-Complete the remaining steps (add storage, tags) and launch the instance after selecting or creating a key pair.
-Private VM:
-Repeat the above steps but select "PrivateSubnet" in the "Configure Instance" step.
-Ensure "Auto-assign Public IP" is set to "Disable".
-
-
-#### Security Groups:
-For added security, create security groups to define inbound and outbound traffic rules for your VMs. For instance:
-A security group for the public VM to allow inbound SSH traffic.
-A security group for the private VM to restrict inbound traffic only from the public subnet.
-
-
-#### Test Connectivity:
-SSH into the public (app) VM using its public IP.
-Due to the reverse proxy we should see the posts page with text from the database 
-
-
-![associateRTwithIG.png](associateRTwithIG.png)
-![subnetsCreated.png](subnetsCreated.png)
-![publicRouteTable.png](publicRouteTable.png)
-![attachGateway.png](attachGateway.png)
-![vpcCreated.png](vpcCreated.png)
-
-
 ## What are Virtual Private Clouds (VPCs)?
 
 **VPC stands for Virtual Private Cloud.** 
@@ -103,7 +31,7 @@ When you create a VPC, you specify its private IPv4 address range (in the form o
 4. Tags: these are pre-filled, then press `create`
 
 5. You have now successfully created a VPC
-
+[vpcCreated.png](vpcCreated.png)
 
 ### What are Subnets?
 
@@ -134,8 +62,8 @@ Fill in the details of your public subnet
 5. Then press `Create subnet`
 
 
-6. You have now successfully created 2 subnets within your VPC. 
-
+6. You should see a green success message and 2 subnets within your VPC. 
+![subnetsCreated.png](subnetsCreated.png)
 
 ### Step 4: Creating an Internet Gateway
 
@@ -150,6 +78,7 @@ Fill in the details of your public subnet
 - Click *Actions* > `Attach a VPC`
 
 6. Search for your VPC and select `Attach to Internet Gateway`
+![attachGateway.png](attachGateway.png)
 
 ### Step 5: Creating a Route table
 
@@ -160,8 +89,7 @@ Fill in the details of your public subnet
 - Then select your VPC from the dropdown
 3. Then select `Create Route Table`
 
-You have now successfully created route table.
-
+![publicRouteTable.png](publicRouteTable.png)
 ### Step 6: Creating Association
 
 5. Navigate to `Subnet Association`
@@ -169,7 +97,7 @@ You have now successfully created route table.
 6. Click `Edit Subnet Association`
 
 7. Check the `puclic-subnet` option
-
+![associateRTwithIG.png](associateRTwithIG.png)
 ### Connecting your internet gateway to your route table
 - `Edit Routes`
 - `Add Route`
@@ -237,4 +165,14 @@ pm2 start app.js
 3. Select `Launch Instance`
 4. Navigate to you app instance and copy and paste the public IP address. This should load the app page.
 5. In the url after the IP address enter `/posts`
-- This should navigate you to the data page
+6. This should navigate you to the data page
+
+Images to be integrated!!!
+
+
+
+
+
+
+!
+
